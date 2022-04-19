@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    {% comment %} <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> {% endcomment %}
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <style type="text/css">
       a:link {
@@ -55,16 +55,16 @@
         font-size: 26px;
       }
   
-      .f-left {
-        float: left;
-      }
-  
       .f-right {
         float: right;
       }
+  
+      .f-left {
+        float: left;
+      }
       header {
-      left: 0px;
       right: 0px;
+      left: 0px;
     }
     </style>
   </head>
@@ -78,7 +78,7 @@
         <div class="card bg-c-blue order-card">
           <div class="card-block">
             <h6 class="m-b-20">Available Exams</h6>
-           <h2 class="text-right"><i class="fas fa-book f-left"></i><span>{{total_course}}</span></h2>
+           <h2 class="text-left"><i class="fas fa-book f-right"></i><span>{{total_course}}</span></h2>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@
         <div class="card bg-c-yellow order-card">
           <div class="card-block">
             <h6 class="m-b-20">Total Questions</h6>
-            <h2 class="text-right"><i class="fas fa-question-circle f-left"></i><span>{{total_question}}</span></h2>
+            <h2 class="text-left"><i class="fas fa-question-circle f-right"></i><span>{{total_question}}</span></h2>
             
           </div>
         </div>
